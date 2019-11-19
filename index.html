@@ -8,6 +8,13 @@
 
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
     <link rel="stylesheet" href="chicken.css">
+  
+    <style>
+      #map{
+        width: 100%;
+        height: 400px;
+      }
+    </style>
     
     <title>Hot Chicken Title</title>
 </head>
@@ -101,7 +108,7 @@
     
 
     <div class="flex-container" id="flex-container-map">
-            <div id="mapbox">map api placeholder</div>
+       <div id="map"></div>
     </div>
 
     <div id="chickeninput">
@@ -116,6 +123,23 @@
         <div id="results">Results</div>
 </div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+function initMap() {
+  var uluru = {lat: 36.16, lng: -86.8};
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 4, center: uluru});
+
+  var marker = new google.maps.Marker({position: uluru, map: map});
+  marker.addListener('click', function(event){
+    map.panTo(marker.getPosition());
+  })
+  map.setZoom(map.getZoom() + 7);
+}
+</script>
+  
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpakryBuKVPF7c0Ioh9__1-NgVy0ISB6I&callback=initMap"></script>
 <script src="chicken.js"></script>
 </body>
+
 </html>
