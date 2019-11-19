@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+    <style>
+      #map{
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="map"></div>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+function initMap() {
+  var uluru = {lat: 36.16, lng: -86.8};
+  var map = new google.maps.Map(
+    document.getElementById('map'), {zoom: 4, center: uluru});
+
+  var marker = new google.maps.Marker({position: uluru, map: map});
+  marker.addListener('click', function(event){
+    map.panTo(marker.getPosition());
+  })
+  map.setZoom(map.getZoom() + 7);
+}
+
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpakryBuKVPF7c0Ioh9__1-NgVy0ISB6I&callback=initMap"></script>
+    <script src='hot-chicken-finder.js'></script>
+  </body>
+</html>
