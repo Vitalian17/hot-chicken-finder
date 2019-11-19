@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(fire2.jpg);
+    background-repeat: no-repeat;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: red;
+  }
+  
+  .flex-container > div {
+    background-color: #f1f1f1;
+    width: 500px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+  #infobox {
+      width: 1500px;
+  }
+
+  #mapbox {
+      width: 1500px;
+      margin: auto;
+  }
+
+  #chickeninput {
+      width:400px;
+      text-align: center;
+      margin: auto;
+    
+  }
+
+  #inputbox {
+      width: 400px;
+      text-align: center;
+      margin: auto;
+  }
