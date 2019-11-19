@@ -1,20 +1,130 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+    <link rel="stylesheet" href="chicken.css">
   
-  <head>
     <style>
       #map{
         width: 100%;
         height: 400px;
       }
     </style>
-  </head>
+    
+    <title>Hot Chicken Title</title>
+</head>
 
-  <body>
-    <div id="map"></div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
+<body>
 
+   <h1>Nashville Hot Chicken</h1>
+                
+    <div class="flex-container" id="pictures">
+        <div id="slideshow1">
+            <div class="slideshow-container">
+
+                <div class="mySlides1 fade">
+                  <img src="./400.png" class="chickenpic" style="width:100%">
+                  <div class="text">400 Degrees</div>
+                </div>
+                
+                <div class="mySlides1 fade">
+                  <img src="./hattie.jpg" class="chickenpic" style="width:100%">
+                  <div class="text">Hattie B's</div>
+                </div>
+                
+                <div class="mySlides1 fade">
+                  <img src="./prince.jpg" class="chickenpic" style="width:100%">
+                  <div class="text">Prince's Hot Chicken</div>
+                </div>
+
+                <div class="mySlides1 fade">
+                    <img src="./pepper.jpg" class="chickenpic" style="width:100%">
+                    <div class="text">Pepperfire</div>
+                  </div>
+
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center" class="dotsdiv">
+                  <span class="dot1"></span> 
+                  <span class="dot1"></span> 
+                  <span class="dot1"></span> 
+                  <span class="dot1"></span>
+                </div>
+                
+        </div>
+        <div id="slideshow2">
+            <div class="slideshow-container">
+
+                <div class="mySlides2 fade">
+                  <img src="./bigshakes.jpg" class="chickenpic" style="width:100%">
+                  <div class="text">Big Shakes</div>
+                </div>
+                
+                <div class="mySlides2 fade">
+                  <img src="./granddaddys.jpg" class="chickenpic" style="width:100%">
+                  <div class="text">Granddaddy's</div>
+                </div>
+                
+                <div class="mySlides2 fade">
+                  <img src="./hurts.jpg" class="chickenpic" style="width:100%">
+                  <div class="text">Hurt's Hot Chicken</div>
+                </div>
+
+                <div class="mySlides2 fade">
+                    <img src="./slow.jpg" class="chickenpic" style="width:100%">
+                    <div class="text">Slow Burn</div>
+                  </div>
+
+                  <div class="mySlides2 fade">
+                    <img src="./boltons.jpg" class="chickenpic" style="width:100%">
+                    <div class="text">Bolton's Hot Chicken</div>
+                  </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center" class="dotsdiv">
+                  <span class="dot2"></span> 
+                  <span class="dot2"></span> 
+                  <span class="dot2"></span>
+                  <span class="dot2"></span> 
+                  <span class="dot2"></span> 
+                </div>
+                
+        </div>
+        
+    </div>
+
+        <div id="infobox">
+            <p>While we don’t know all of the details that led up to that faithful night,  we do know that after a night of partying a man’s jaded lover wanted revenge!  Instead of a lecture the next morning, the man awoke to the sizzlin’ smell of fried chicken.  The scorned woman created the perfect recipe in an effort to get her revenge. With the trap set, the man’s jilted lover served up a plate of homemade fried chicken. Without noticing the devilish amount of peppers and spices she had sprinkled on the chicken, he dug in. Much to her dismay, the man didn’t fall over weeping in pain. Nope, he asked for seconds, and, at that moment, the legend was born.</p>
+        </div>
+    
+
+    <div class="flex-container" id="flex-container-map">
+       <div id="map"></div>
+    </div>
+
+    <div id="chickeninput">
+        <form class="pure-form">
+            <input type="text" id="inputbox" placeholder="Find hot chicken..." required>
+            <br>
+            <button class="pure-button">Get Hot!</button>
+        </form>
+    </div>
+
+    <div class="flex-container" id="flex-container-results">
+        <div id="results">Results</div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
 function initMap() {
   var uluru = {lat: 36.16, lng: -86.8};
   var map = new google.maps.Map(
@@ -26,9 +136,10 @@ function initMap() {
   })
   map.setZoom(map.getZoom() + 7);
 }
+</script>
+  
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpakryBuKVPF7c0Ioh9__1-NgVy0ISB6I&callback=initMap"></script>
+<script src="chicken.js"></script>
+</body>
 
-    </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpakryBuKVPF7c0Ioh9__1-NgVy0ISB6I&callback=initMap"></script>
-    <script src='hot-chicken-finder.js'></script>
-  </body>
 </html>
