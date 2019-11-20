@@ -6,6 +6,7 @@
 h1 {
     color: #FFFFFF;
     text-align: center;
+    font-family: 
 }
 
 body {
@@ -20,7 +21,7 @@ body {
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color:;
     width: 500px;
     margin: auto;
     text-align: center;
@@ -61,7 +62,6 @@ body {
       max-width:400px;
       text-align: center;
       margin: auto;
-      border: 1px solid white;
       margin-top: 50px;
     
   }
@@ -179,6 +179,20 @@ img {vertical-align: middle;}
     margin-bottom: 10px;
 }
 
+.result-container {
+  background-color: #F79D22;
+  border: 2px solid #717171;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #ef4723;
+  text-align: center;
+}
+
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 768px) {
   .text {font-size: 11px}
@@ -206,9 +220,4 @@ img {vertical-align: middle;}
     margin: auto;
 }
 
-.result-container {
-  background-color: red;
-  border: 2px solid yellow;
-  width: 80%;
-  margin: auto;
 }
