@@ -85,6 +85,7 @@ body {
     width: 1500px;
     margin: auto;
     margin-top: 50px;
+    margin-bottom: 100px;
   }
 
   * {box-sizing: border-box;}
@@ -201,4 +202,13 @@ img {vertical-align: middle;}
     width: 100%;
     height: 160px;
   }
+#flex-container-map {
+    margin: auto;
+}
+
+.result-container {
+  background-color: red;
+  border: 2px solid yellow;
+  width: 80%;
+  margin: auto;
 }

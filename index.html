@@ -13,6 +13,9 @@
       #map{
         width: 80%;
         height: 400px;
+        margin-top: 50px;
+        border: 1px solid #717171;
+        border-radius: .8%;
       }
     </style>
     
@@ -125,7 +128,7 @@
         <form class="pure-form">
             <input type="text" id="inputbox" placeholder="Find hot chicken..." required>
             <br>
-            <button class="pure-button">Get Hot!</button>
+            <button class="pure-button" id="hot-button">Get Hot!</button>
         </form>
     </div>
 
@@ -147,7 +150,8 @@ function initMap() {
   map.setZoom(map.getZoom() + 7);
 }
 </script>
-  
+
+<script src="yelp.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpakryBuKVPF7c0Ioh9__1-NgVy0ISB6I&callback=initMap"></script>
 <script src="chicken.js"></script>
 </body>
