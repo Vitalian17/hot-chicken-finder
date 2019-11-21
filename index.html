@@ -145,11 +145,6 @@ function initMap() {
   var centralNashville = {lat: 36.16, lng: -86.8};
   map = new google.maps.Map(
     document.getElementById('map'), {zoom: 4, center: centralNashville});
-
-  var marker = new google.maps.Marker({position: centralNashville, map: map});
-  marker.addListener('click', function(event){
-    map.panTo(marker.getPosition());
-  })
   map.setZoom(map.getZoom() + 7);
 }
 </script>
