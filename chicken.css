@@ -10,7 +10,7 @@ h1 {
     text-shadow: -2px 0 #ef4723, 0 2px #ef4723, 2px 0 #ef4723, 0 -2px #ef4723;
   }
 
-  hr {
+  #secondbar {
     max-width: 80%;
     margin: auto;
     padding: 2px;
@@ -18,6 +18,16 @@ h1 {
     margin-bottom: 50px;
     border: 1px solid white;
     border-radius: 20px;
+  }
+
+  #topbar {
+    max-width: 80%;
+    margin: auto;
+    padding: 2px;
+    background-color: #F79D22;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
   }
 
 body {
