@@ -70,6 +70,7 @@ $("#hot-button").on("click", function (event) {
             var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
             var marker = new google.maps.Marker({
                 position: latLng,
+                icon: "https://files.slack.com/files-pri/TNRF54CSU-FQUCYV6Q0/bluchi.gif",
                 map: map,
                 title: fullResults[i].name
             })
