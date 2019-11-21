@@ -36,7 +36,6 @@ body {
   }
   
   .flex-container > div {
-    background-color:;
     width: 500px;
     margin: auto;
     text-align: center;
@@ -206,6 +205,8 @@ img {vertical-align: middle;}
   margin: auto;
   text-align: center;
   margin-top: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 h2 {
