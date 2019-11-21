@@ -81,7 +81,7 @@ body {
   }
 
   .pure-button {
-      background-color: #CB3312;
+   background-color: #CB3312;
       color: #ffffff;
       font-weight: bold;
       padding: 10px;
@@ -229,4 +229,11 @@ h2 {
     margin: auto;
 }
 
+}
+
+.result-container {
+  background-color: red;
+  border: 2px solid yellow;
+  width: 80%;
+  margin: auto;
 }
