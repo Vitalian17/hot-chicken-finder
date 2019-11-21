@@ -33,10 +33,10 @@ $("#hot-button").on("click", function (event) {
         })
         userLocation.addListener('click', function (event) {
             map.panTo(userLocation.getPosition());
-            map.setZoom(14);
+            map.setZoom(15);
         })
         map.panTo(userLocation.getPosition());
-        map.setZoom(14);
+        map.setZoom(15);
     } )
 
     $.ajax({
@@ -76,7 +76,7 @@ $("#hot-button").on("click", function (event) {
             marker.addListener('click', function (event) {
                 console.log(this);
                 
-                map.setZoom(14);
+                map.setZoom(15);
                 map.panTo(this.getPosition());
             });
         }
