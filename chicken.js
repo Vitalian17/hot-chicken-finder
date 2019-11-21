@@ -1,5 +1,6 @@
 var slideIndex = 0;
 var slideIndex2 = 0;
+var firstTime = true;
 showSlides1();
 
 
@@ -17,7 +18,12 @@ function showSlides1() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides1, 6000); // Change image every 2 seconds
+  if (firstTime) {
+    setTimeout(showSlides1, 9000); // Change image every 2 seconds
+    firstTime = false;
+  } else {
+    setTimeout(showSlides1, 6000); // Change image every 2 seconds
+  }
 }
 
 showSlides2();
