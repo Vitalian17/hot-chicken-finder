@@ -29,7 +29,19 @@ $("#hot-button").on("click", function(event){
             var phoneNumber = $("<p>").text(fullResults[i].display_phone);
             resultDiv.append(resultTitle, resultAddress, phoneNumber);
             $("#results").append(resultDiv);
-
+            console.log(fullResults[i].coordinates)
+            
+            var coords = fullResults[i].coordinates;
+            var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
+            var marker = new google.maps.Marker({
+                position: latLng,
+                map: map,
+                title: fullResults[i].name
+            })
+            marker.addListener('click', function() {
+            map.setZoom(20);
+            map.setCenter(marker.getPosition());
+        });
         }
     })
 })
