@@ -4,10 +4,21 @@
 }
 
 h1 {
+  font-size: 48px;
     color: #FFFFFF;
     text-align: center;
-    font-family: 
-}
+    text-shadow: -2px 0 #ef4723, 0 2px #ef4723, 2px 0 #ef4723, 0 -2px #ef4723;
+  }
+
+  hr {
+    max-width: 80%;
+    margin: auto;
+    padding: 2px;
+    background-color: #F79D22;
+    margin-bottom: 50px;
+    border: 1px solid white;
+    border-radius: 20px;
+  }
 
 body {
     background-image: url(hotchicken.jpg);
@@ -198,7 +209,8 @@ img {vertical-align: middle;}
 }
 
 h2 {
-  color: #ef4723;
+  color: #ffffff;
+  text-shadow: -1px 0 #ef4723, 0 1px #ef4723, 1px 0 #ef4723, 0 -1px #ef4723;
   text-align: center;
 }
 
