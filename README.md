@@ -22,3 +22,13 @@ API Integration:
 8. Creating a condition in case the user blocked location finding.
 9. Fixing an error that caused the marker to default to one particular restaurant.
 10. Changing the markers to bouncing chickens.
+
+Front End:
+
+1. Made basic HTML skeleton
+2. Found appropriate background image
+3. Added picture slideshows
+4. Used flexboxes for majority of divs (slideshows, map, results)
+5. Used Pure framework for button
+6. Populated hot chicken results using Yelp API
+7. Had to implement media queries in JS due to chicken icons not being mobile device compatable
