@@ -2,7 +2,7 @@ var yelpKey = "UkaLHk-lT2l73VMIoJSF6Iu7lh2ZocrRtzJ2OOacNV7cSTTL5Yge7PN3p0dpcAr1I
 var yelpURL = "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search";
 var markerIcon;
 
-if (window.matchMedia("(max-width: 700px)").matches) {
+if (window.matchMedia("(max-width: 800px)").matches) {
     markerIcon = "";
 } else {
     markerIcon = "https://files.slack.com/files-pri/TNRF54CSU-FQUCYV6Q0/bluchi.gif";
