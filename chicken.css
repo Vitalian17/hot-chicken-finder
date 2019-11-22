@@ -4,10 +4,17 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 56px;
     color: #FFFFFF;
     text-align: center;
     text-shadow: -2px 0 #ef4723, 0 2px #ef4723, 2px 0 #ef4723, 0 -2px #ef4723;
+  }
+
+  h3 {
+    color: #FFFFFF;
+    text-align: center;
+    text-shadow: -2px 0 #ef4723, 0 2px #ef4723, 2px 0 #ef4723, 0 -2px #ef4723;
+    padding-bottom: 20px;
   }
 
   #secondbar {
