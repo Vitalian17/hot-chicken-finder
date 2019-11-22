@@ -56,7 +56,6 @@ $("#hot-button").on("click", function (event) {
             "x-requested-with": "xmlhttprequest"
         }
     }).then(function (yelpResults) {
-        console.log(yelpResults);
         var fullResults = yelpResults.businesses;
 
         for (let i = 0; i < fullResults.length; i++) {
@@ -70,7 +69,6 @@ $("#hot-button").on("click", function (event) {
             var phoneNumber = $("<p>").text(fullResults[i].display_phone);
             resultDiv.append(resultTitle, resultAddress, phoneNumber);
             $("#results").append(resultDiv);
-            console.log(fullResults[i].coordinates)
 
             var coords = fullResults[i].coordinates;
             var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
@@ -81,7 +79,6 @@ $("#hot-button").on("click", function (event) {
                 title: fullResults[i].name
             })
             marker.addListener('click', function (event) {
-                console.log(this);
                 
                 map.setZoom(15);
                 map.panTo(this.getPosition());
